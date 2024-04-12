@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                
+                mvn clean package
                 echo 'Yes, Application Build is done !'
             }
         }
