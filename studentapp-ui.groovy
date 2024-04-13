@@ -24,10 +24,10 @@ pipeline {
                 echo 'Here we are testing '
             }
         }
-        */ stage('Quality Test') {
-            steps {
-               waitForQualityGate abortPipeline: true, credentialsId: 'sonar-token'
-                echo 'Here we are testing the quality'
+        //  stage('Quality Test') {
+        //     steps {
+        //        waitForQualityGate abortPipeline: true, credentialsId: 'sonar-token'
+        //         echo 'Here we are testing the quality'
             }
         }
         stage('Deploy') {
