@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Quality Test') {
             steps {
-               waitForQualityGate abortPipeline: false, credentialsId: 'sonar-tokenn'
+               waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'
                 echo 'Here we are testing the quality'
             }
         }
