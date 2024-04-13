@@ -26,6 +26,9 @@ pipeline {
         }
         stage('Quality Test') {
             steps {
+                withSonarQubeEnv(credentialsId: 'sonar-tokenn', installationName: 'sonarqube') {
+    // some block
+}
                 echo 'Here we are testing the quality'
             }
         }
